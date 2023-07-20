@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Listening History Comparison - Result</title>
+</head>
+<body>
+    <h1>Spotify Listening History Comparison - Result</h1>
+    <h2>User ID: {{ user_id }}</h2>
+    <h3>Common Tracks:</h3>
+    <ul>
+    {% for track in common_tracks %}
+        <li>{{ track }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
