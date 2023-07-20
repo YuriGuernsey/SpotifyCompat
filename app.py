@@ -4,12 +4,12 @@ import requests
 import json
 
 app = Flask(__name__)
-app.config['SERVER_NAME'] = '127.0.0.1:5000'  # Replace with your server name or domain
+app.config['SERVER_NAME'] = 'https://spotify-compat.vercel.app/'  # Replace with your server name or domain
 
 # Replace with your Spotify API credentials
 CLIENT_ID = '62e6163968de41cd8e9aac30b8224560'
 CLIENT_SECRET = '4c605da6d1274f4c83d5d1af045eb266'
-REDIRECT_URI = 'http://127.0.0.1:5000'
+REDIRECT_URI = 'https://spotify-compat.vercel.app/'
 
 # Store user data (in production, use a secure database)
 users_data = {}
